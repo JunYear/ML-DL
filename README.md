@@ -29,7 +29,10 @@
 
 ## How to learn each problems
 
-![Classification about learning](https://github.com/junsnote/ML-DL/assets/121210928/6f648cee-0be8-4c87-8aeb-68919455e44e)
+<p align="center">
+    <img src="https://github.com/junsnote/ML-DL/assets/121210928/6f648cee-0be8-4c87-8aeb-68919455e44e">
+</p>  
+
 
 
 
