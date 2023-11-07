@@ -29,7 +29,8 @@
 
 ## How to learn each problems
 
-![Classification about learning](Classification about learning.png)
+![Classification about learning](https://github.com/junsnote/ML-DL/assets/121210928/6f648cee-0be8-4c87-8aeb-68919455e44e)
+
 
 
 ### Supervised Learning
