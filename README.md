@@ -29,7 +29,7 @@
 
 ## How to learn each problems
 
-<img width="80" src="C:\Users\yyt11\OneDrive\바탕 화면\Classification about learning.png"/>
+![Classification about learning](./Classification about learning.png)
 
 
 ### Supervised Learning
