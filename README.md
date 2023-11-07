@@ -29,7 +29,7 @@
 
 ## How to learn each problems
 
-![Classification about learning](./Classification about learning.png)
+![Classification about learning](Classification about learning.png)
 
 
 ### Supervised Learning
