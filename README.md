@@ -31,7 +31,7 @@
 
 
 
-![Classification about learning](Classification about learning.png)
+![Classification about learning](C:\Users\yyt11\OneDrive\바탕 화면\Classification about learning.png)
 
 
 
