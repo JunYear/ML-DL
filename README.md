@@ -30,7 +30,7 @@
 ## How to learn each problems
 
 <p align="center">
-    <img src="https://github.com/junsnote/ML-DL/assets/121210928/6f648cee-0be8-4c87-8aeb-68919455e44e">
+    <img src="https://github.com/junsnote/ML-DL/assets/121210928/908c37ea-4bdf-458c-8a96-6c22cd63394b">
 </p>  
 
 
