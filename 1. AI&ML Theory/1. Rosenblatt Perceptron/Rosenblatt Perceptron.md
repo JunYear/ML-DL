@@ -22,8 +22,11 @@
 > 퍼셉트론은 인공 뉴런의 한 형태이다. 이는 입력을 합하여 중간값 z를 계산하고, 활성화 함수에 공급한다. 퍼셉트론은 부호 함수를 활성화 함수로 사용하지만, 다른 인공 뉴런은 다른 함수를 사용한다.
 >
 > $\mathcal{y}$ $=$ $\mathcal{f}$ $($ $\mathcal{z}$ $)$ 
+>
 > $\mathcal{z}$ $=$ $\sum_{i=0}^n w_i x_i$ 
-> $f(z)=\begin{cases}-1, & \mbox{if }\mbox{z<0} \\1, & \mbox{if }\mbox{z>=0}\end{cases}$
+>
+> $$f(z)=\begin{cases}-1, & \mbox{if }\mbox{z<0} \\1, & \mbox{if }\mbox{z>=0}\end{cases}$$
+>
 > $x_0$ $=$ $1$ (편향 항) 
 
 - 편향 항 (bias term) $x_0$는 언제나 값 1로 할당됨.

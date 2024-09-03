@@ -40,12 +40,14 @@ $y = XW$
 - 순환 연상 메모리는 어떤 일을 기억해낼 때 연상 작용을 반복함으로써 보다 나은 결과를 얻을 수 있으며, 이러한 순환 개념을 도입한 것을 말함.
 
 기억시킬 입력 패턴: $s = [s_1 s_2 ... s_n]$
+
 연상되는 출력 패턴: $t = [t_1 t_2 ... t_m]$
+
 연결 강도: $W = s^Tt$ 
 
-$= \begin{bmatrix}s1\\s2\\ \vdots\\s_n\end{bmatrix}[t_1 t_2 ... t_m]$
+$$= \begin{bmatrix}s1\\s2\\ \vdots\\s_n\end{bmatrix}[t_1 t_2 ... t_m]$$
 
-$= \begin{bmatrix}s_1t_1 & s_1t_2 & \cdots & s_1t_m\\ s_2t_1 & s_2t_2 & \cdots & s_2t_m \\ \vdots & \vdots & \vdots & \vdots \\ s_nt_1 & s_nt_2 & \cdots & s_nt_m \end{bmatrix}$
+$$= \begin{bmatrix}s_1t_1 & s_1t_2 & \cdots & s_1t_m\\ s_2t_1 & s_2t_2 & \cdots & s_2t_m \\ \vdots & \vdots & \vdots & \vdots \\ s_nt_1 & s_nt_2 & \cdots & s_nt_m \end{bmatrix}$$
 
 - $p$개의 패턴쌍들을 저장할 경우의 연결 강도 $W$는 다음과 같음.
 

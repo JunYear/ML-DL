@@ -9,7 +9,7 @@
 - $NET$값이 임계치 $T$보다 크거나 같으면 뉴런의 출력이 1
 - $NET$값이 임계치 $T$보다 작으면 뉴런의 출력이 0
 
-$f(NET)=\begin{cases}1: & \text{NET >= T} \\0: & \text{NET < T}\end{cases}$
+$$f(NET)=\begin{cases}1: & \text{NET >= T} \\0: & \text{NET < T}\end{cases}$$
 
 ## 양극성 계단 함수
 양극성 계단 함수는 양극성이며, 이진 함수이다.
@@ -17,9 +17,10 @@ $f(NET)=\begin{cases}1: & \text{NET >= T} \\0: & \text{NET < T}\end{cases}$
 - $NET$값이 임계치 $T$와 같으면 뉴런의 출력이 0
 - $NET$값이 임계치 $T$보다 작으면 뉴런의 출력이 -1
 
-$f(NET)=\begin{cases} +1: & \text{NET > T} \\0: & \text{NET = T} \\-1: & \text{NET < T} \end{cases}$
+$$f(NET)=\begin{cases} +1: & \text{NET > T} \\0: & \text{NET = T} \\-1: & \text{NET < T} \end{cases}$$
 
 ## 항등 함수
+
 항등 함수는 양극성이며, 선형 연속 함수이다.
 - $NET$값이 그대로 출력
 
@@ -28,22 +29,24 @@ $f(NET) = NET$
 ## ReLU (Rectified Linear Unit) 함수
 ReLU 함수는 경사 함수라고도 하며, 심층 신경망에 주로 사용됨
 ReLU 함수는 단극성이며, 선형 연속함수이다.
+
 - $NET$값이 0보다 작은 경우 뉴런의 출력이 0
 - $NET$값이 0보다 크거나 같은 경우 뉴런의 출력이 $NET$ 값 그대로 출력
 
-$f(NET) = max(0, NET) =\begin{cases} NET: & \text{NET >= T} \\0: & \text{NET < T} \end{cases}$
+$$f(NET) = max(0, NET) =\begin{cases} NET: & \text{NET >= T} \\0: & \text{NET < T} \end{cases}$$
 
 ## 단극성 시그모이드 함수
+
 단극성 시그모이드 함수는 단극성이며, 비선형 연속 함수이다.
 
-$f(NET) = 1 / 1+e^{-\lambda NET}$ 
+$f(NET) = \frac{1}{1+e^{-\lambda NET}}$ 
 
 - 뉴런의 출력은 0에서 1 사이의 값이 되며, $NET = 0$ 이면 뉴런의 출력은 $1/2$ 이 됨.
 - 경사도 $\lambda$ 가 커지면 $f(NET)$ 값은 점점 y축에 접근하게 됨.
 - 만약 $\lambda \to \infty$ 이면, 시그모이드 함수는 계단 함수와 동일한 형태가 됨.
 - 일반적으로 경사도 $\lambda = 1$ 값을 사용하므로 다음과 같이 표현 가능
 
-$f(NET) = 1 / 1+e^{-NET}$ 
+$f(NET) = \frac{1}{1+e^{-NET}}$ 
 
 - 단극성 시그모이드 함수는 연속 함수로 미분 가능하여 델타 학습 방법 등의 활용이 가능
 - $y$ 는 출력값을 의미함.
@@ -51,6 +54,7 @@ $f(NET) = 1 / 1+e^{-NET}$
 $f'(NET) = f(NET)[1-f(NET)] = y(1-y)$
 
 ## 양극성 시그모이드 함수
+
 양극성 시그모이드 함수는 양극성이며, 비선형 함수이다.
 
 $f(NET) = 1-e^{-NET} / 1+e^{-NET}$
@@ -58,13 +62,14 @@ $f(NET) = 1-e^{-NET} / 1+e^{-NET}$
 - 뉴런의 출력은 -1에서 1 사이의 값이 되며, $NET = 0$ 이면 뉴런의 출력은 0임.
 - 양극성 시그모이드 함수는 연속 함수로 미분 가능하여 델타 학습 방법 등의 활용이 가능
 
-$f'(NET) = 1/2 [1+f(NET)][1-f(NET)] = 1/2(1+y)(1-y)$
+$f'(NET) = \frac{1}{2 [1+f(NET)][1-f(NET)]} = \frac{1}{2(1+y)(1-y)}$
 
 ### tanh 함수
+
 - tanh 함수는 경사도가 2인 양극성 시그모이드 함수라고 할 수 있음.
 - 양극성 시그모이드 함수에 비해 보다 더 $y$축에 접근한 형태가 됨을 알 수 있음.
 
-$f(NET) = e^{NET}-e^{-NET}/e^{NET}+e^{-NET} = 1-e^{-2NET}/1+e^{-2NET}$ 
+$f(NET) = e^{NET}-\frac{e^{-NET}}{e^{NET}+e^{-NET}} = 1-\frac{e^{-2NET}}{1+e^{-2NET}}$ 
 
 $f'(NET) = [1+f(NET)][1-f(NET)] = (1+y)(1-y)$
 
@@ -72,6 +77,6 @@ $f'(NET) = [1+f(NET)][1-f(NET)] = (1+y)(1-y)$
 - 각 값의 편차를 확대 시켜 출력이 큰 값은 상대적으로 더 크게, 출력이 작은 값은 더 작게 하여 모든 출력의 합이 1이 되게 정규화 하는 기능을 함.
 - softmax함수는 시그모이드 함수와 마찬가지로 0 ~ 1 사이의 값이 출력되지만, 각각의 출력에 대한 확률을 알 수 있는 장점이 있음
 
-$y_n = e^{x_n} / \sum_{k=1}^N e^{x_k}$ ($n = 1, 2, ... ,N$)
+$y_n = \frac{e^{x_n}}{\sum_{k=1}^N e^{x_k}} (n = 1, 2, ... ,N)$ 
 
 - N은 출력 계층의 뉴런 수임.

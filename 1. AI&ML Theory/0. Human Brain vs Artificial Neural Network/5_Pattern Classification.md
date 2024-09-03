@@ -30,7 +30,7 @@
 	- $w_1x_1 + w_2x_2 + b = 0$
 - 판단 경계선을 벡터 형태로 표현
 	- $XW = 0$
-	- $X = [x_1 x_2 1], W = \begin{bmatrix}w_1\\ w_2 \\ b \end{bmatrix}$
+	- $$X = [x_1 x_2 1], W = \begin{bmatrix}w_1\\ w_2 \\ b \end{bmatrix}$$
 
 ## 판단면을 정의하는 판별 함수
 - 판단면을 정의하는 함수 $d(X)$를 판별 함수라고 함

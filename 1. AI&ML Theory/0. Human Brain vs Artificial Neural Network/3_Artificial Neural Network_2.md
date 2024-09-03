@@ -17,7 +17,7 @@
 - $NET$가 임계치 $T$보다 크거나 같으면 뉴런 활성화
 - $NET$가 임계치 $T$보다 작으면 뉴런 비활성화
 
-$y=\begin{cases}1, & \mbox{NET >= T} \\0, & \mbox{NET < T}\end{cases}$
+$$y=\begin{cases}1, & \mbox{NET >= T} \\0, & \mbox{NET < T}\end{cases}$$
 
 ## 뉴런의 입력 가중합
 - 신경망 모델에 있어 뉴런의 **입력 가중합**이란 각각의 **입력 $x_i$와 연결 강도 $w_i$를** **곱하여 이들을 모두 더한 것**을 말한다.
